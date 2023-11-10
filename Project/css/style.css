@@ -1,0 +1,107 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* 아이템들을 세로로 배치 */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #greeting {
+    color: #d2e275;
+    text-align: center;
+    margin: 0; /* 간격을 없애기 위해 margin을 모두 0으로 설정 */
+  }
+  
+  .image {
+    position: relative;
+    z-index: -1;
+  }
+  
+  #clock {
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 10vw; /* viewport 너비에 따라 크기 조정 */
+    margin: 0; /* 간격을 없애기 위해 margin을 모두 0으로 설정 */
+  }
+  
+  #quote {
+    color: #d2e275;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+  }
+  
+  #weather {
+    color: #d2e275;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: none; /* 기존 border 속성 제거 */
+    border-bottom: 2px solid #3498db; /* 밑에 선 추가, 두께를 2px로 설정 */
+    font-size: 16px;
+    box-shadow: none; /* 기존 box-shadow 속성 제거 */
+    outline: none;
+    color: #d2e275;
+    width: 300px;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #d2e275; /* 원하는 색상으로 변경 */
+  }
+
+  #todo-list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    font-size: 16px;
+    box-shadow: none;
+    outline: none;
+    color: #d2e275;
+    background: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 100px;
+    overflow-y: auto;
+    width: 200px;
+  }
+  
+  #todo-list li {
+    display: flex;
+    justify-content: space-between; /* 글자와 박스를 오른쪽에 붙임 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #todo-list li span {
+    flex-grow: 1; /* 글자와 박스 사이의 공간을 채우기 위해 확장 */
+  }
+  
+  #todo-list li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #e74c3c; /* X표시 색상 변경 */
+  }
+  
+  #comu {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
