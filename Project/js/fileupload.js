@@ -1,7 +1,7 @@
 // AWS SDK 초기 설정 (필요한 경우)
 AWS.config.update({
-    accessKeyId: 'AKIAZAN5SRAA6QOP3HNA',
-    secretAccessKey: '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',
+    accessKeyId: '*',
+    secretAccessKey: '*',
     region: 'us-east-1' // AWS 리전 설정
 });
 
